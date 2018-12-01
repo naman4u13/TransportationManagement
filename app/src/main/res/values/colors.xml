@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="unselected_color">#8a000000</color>
+    <color name="selected_color">#012a51</color>
+    <color name="appbar_color">#e9e8e7</color>
+    <color name="colorPrimary">#520606</color>
+    <color name="colorPrimaryDark">#a10d0d</color>
+    <color name="colorAccent">#b71c1c</color>
+    <color name="bg_login">#428bca</color>
+    <color name="signup_color">#a6f95403</color>
+    <color name="bg_register">#2e3237</color>
+    <color name="bg_main">#428bca</color>
+    <color name="input_login">#222222</color>
+    <color name="input_login_hint">#999999</color>
+    <color name="input_register">#888888</color>
+    <color name="input_register_bg">#3b4148</color>
+    <color name="google_red">#e42809</color>
+    <color name="input_register_hint">#5e6266</color>
+    <color name="btn_login">#00c3da</color>
+    <color name="btn_login_bg">#eceef1</color>
+    <color name="lbl_name">#333333</color>
+    <color name="btn_logut_bg">#ff6861</color>
+    <color name="blue_sky">#7EC0EE</color>
+    <color name="colorFooter">#b02251</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="reject">#a5c7eb</color>
+    <color name="order_heading">#333</color>
+    <color name="order_inside">#484c75</color>
+    <color name="black">#000000</color>
+    <color name="google_btn_color">#d34836</color>
+    <color name="grey">#A3A3A3</color>
+    <color name="blue">#465691</color>
+    <color name="light_grey">#DCDDE6</color>
+    <color name="background">#eeeeee</color>
+    <color name="line">#cccccc</color>
+    <color name="light_black">#666666</color>
+    <color name="lighter_black">#999999</color>
+    <color name="cyan_blue">#33c0f9</color>
+    <color name="light_green">#04d64f</color>
+    <color name="light_red">#f56e72</color>
+    <color name="dark_blue">#40257a</color>
+    <color name="purple">#ac9ad3</color>
+    <color name="multiple_image_select_primary">@color/colorPrimary</color>
+    <color name="multiple_image_select_primaryDark">@color/colorPrimaryDark</color>
+    <color name="multiple_image_select_accent">@color/colorAccent</color>
+    <color name="blue1">#475596</color>
+    <color name="yellow">#f9dc85</color>
+    <color name="green">#40c351</color>
+    <color name="white">#ffffff</color>
+    <color name="categorySelected">#80deea</color>
+    <color name="orangeRSD">#f57f17</color>
+    <color name="insta_grey">#E0E0E0</color>
+    <color name="text_grey">#606060</color>
+    <color name="divider_color">#26000000</color>
+    <color name="orange_shade">#fbb11f</color>
+    <color name="orange_shade_dark">#ef3f33</color>
+    <color name="orange_nd">#ff5722</color>
+    <color name="bottomNavigationTintColor">#FFFFFF</color>
+    <color name="tvnv">#cc000000</color>
+    <color name="haat">#012A51</color>
+    <color name="mycart">#090909</color>
+    <color name="ivnv">#7E7E7E</color>
+    <color name="sortreset">#898989</color>
+    <color name="tabLayoutBg">#012a51</color>
+    <color name="tabIconsBg">#023e76</color>
+    <color name="profileEditIcon">#011324</color>
+
+    <item name="Red" type="color">#E53935</item>
+    <item name="Purple" type="color">#8E24AA</item>
+    <item name="Pink" type="color">#D81B60</item>
+    <item name="Teal" type="color">#00897B</item>
+    <item name="Indigo" type="color">#3949AB</item>
+    <item name="Green" type="color">#43A047</item>
+    <item name="Brown" type="color">#6D4C41</item>
+    <item name="Blue" type="color">#1E88E5</item>
+    <item name="Orange" type="color">#F4511E</item>
+
+    <color name="grey_hard">#96989A</color>
+    <color name="grey_medium">#BDBFC1</color>
+    <color name="grey_soft">#F5F5F5</color>
+
+    <color name="grey_bg">#EBEFF0</color>
+    <color name="grey_text">#222D31</color>
+    <color name="me_chat_bg">#FFE0B2</color>
+
+</resources>

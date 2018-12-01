@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/event_start_time_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:hint="@string/start_time"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/arrow1"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/event_start_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:inputType="textVisiblePassword"
+            android:textSize="17sp"
+            tools:ignore="TextFields" />
+    </android.support.design.widget.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/arrow1"
+        android:layout_width="35dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/right_arrow_black"
+        app:layout_constraintBottom_toBottomOf="@id/event_start_time_layout"
+        app:layout_constraintLeft_toRightOf="@id/event_start_time_layout"
+        app:layout_constraintRight_toLeftOf="@id/event_end_time_layout"
+        app:layout_constraintTop_toTopOf="@id/event_start_time_layout" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/event_end_time_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="18dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:hint="@string/end_time"
+        app:layout_constraintLeft_toRightOf="@id/arrow1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/event_end_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:inputType="textVisiblePassword"
+            android:textSize="17sp"
+            tools:ignore="TextFields" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/event_start_day_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:hint="@string/start_date"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/arrow1"
+        app:layout_constraintTop_toBottomOf="@id/event_start_time_layout">
+
+        <EditText
+            android:id="@+id/event_start_day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:inputType="textVisiblePassword"
+            android:textSize="17sp"
+            tools:ignore="TextFields" />
+    </android.support.design.widget.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/arrow2"
+        android:layout_width="35dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/right_arrow_black"
+        app:layout_constraintBottom_toBottomOf="@id/event_start_day_layout"
+        app:layout_constraintLeft_toRightOf="@id/event_start_time_layout"
+        app:layout_constraintRight_toLeftOf="@id/event_end_day_layout"
+        app:layout_constraintTop_toTopOf="@id/event_start_day_layout" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/event_end_day_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="18dp"
+        android:layout_marginStart="8dp"
+        android:layout_weight="1"
+        android:hint="End Date"
+        app:layout_constraintLeft_toRightOf="@id/arrow1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/event_start_day_layout"
+        tools:ignore="HardcodedText">
+
+        <EditText
+            android:id="@+id/event_end_day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:inputType="textVisiblePassword"
+            android:textSize="17sp"
+            tools:ignore="TextFields" />
+    </android.support.design.widget.TextInputLayout>
+
+
+</android.support.constraint.ConstraintLayout>

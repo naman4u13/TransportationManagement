@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/my_events"
+            android:title="@string/my_events" />
+        <item
+            android:id="@+id/liked_events"
+            android:title="@string/liked_events" />
+        <item
+            android:id="@+id/log_out"
+            android:title="Log Out"
+             />
+
+    </group>
+</menu>

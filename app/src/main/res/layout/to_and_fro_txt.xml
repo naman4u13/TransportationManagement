@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/event_start_time_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:text="@string/start_time"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/arrow1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/event_start_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:textSize="17sp"
+        app:layout_constraintLeft_toLeftOf="@id/event_start_time_layout"
+        app:layout_constraintRight_toRightOf="@id/event_start_time_layout"
+        app:layout_constraintTop_toBottomOf="@id/event_start_time_layout"
+        tools:ignore="TextFields"
+        tools:text="9:00 AM" />
+
+    <ImageView
+        android:id="@+id/arrow1"
+        android:layout_width="35dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="15dp"
+
+        android:src="@drawable/right_arrow_black"
+        app:layout_constraintBottom_toBottomOf="@id/event_start_time"
+        app:layout_constraintLeft_toRightOf="@id/event_start_time_layout"
+        app:layout_constraintRight_toLeftOf="@id/event_end_time_layout"
+        app:layout_constraintTop_toTopOf="@id/event_start_time_layout" />
+
+    <TextView
+        android:id="@+id/event_end_time_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="18dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:text="@string/end_time"
+        app:layout_constraintLeft_toRightOf="@id/arrow1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/event_end_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:textSize="17sp"
+        app:layout_constraintLeft_toLeftOf="@id/event_end_time_layout"
+        app:layout_constraintRight_toRightOf="@id/event_end_time_layout"
+        app:layout_constraintTop_toBottomOf="@id/event_end_time_layout"
+        tools:ignore="TextFields"
+        tools:text="10:00AM" />
+
+    <TextView
+        android:id="@+id/event_start_day_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:text="@string/start_date"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/arrow2"
+        app:layout_constraintTop_toBottomOf="@id/event_start_time" />
+
+    <TextView
+        android:id="@+id/event_start_day"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:textSize="17sp"
+        app:layout_constraintLeft_toLeftOf="@id/event_start_day_layout"
+        app:layout_constraintRight_toRightOf="@id/event_start_day_layout"
+        app:layout_constraintTop_toBottomOf="@id/event_start_day_layout"
+        tools:ignore="TextFields"
+        tools:text="3/3/3" />
+
+    <ImageView
+        android:id="@+id/arrow2"
+        android:layout_width="35dp"
+        android:layout_height="0dp"
+        android:src="@drawable/right_arrow_black"
+        app:layout_constraintBottom_toBottomOf="@id/event_start_day"
+        app:layout_constraintLeft_toLeftOf="@id/arrow1"
+        app:layout_constraintRight_toRightOf="@id/arrow1"
+        app:layout_constraintTop_toTopOf="@id/event_start_day_layout" />
+
+    <TextView
+        android:id="@+id/event_end_day_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="18dp"
+        android:layout_weight="1"
+        android:text="End Date"
+        app:layout_constraintLeft_toLeftOf="@id/event_end_time_layout"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/event_start_day_layout" />
+
+
+    <TextView
+        android:id="@+id/event_end_day"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:inputType="textVisiblePassword"
+        android:textSize="17sp"
+        app:layout_constraintLeft_toLeftOf="@id/event_end_day_layout"
+        app:layout_constraintRight_toRightOf="@id/event_end_day_layout"
+        app:layout_constraintTop_toBottomOf="@id/event_end_day_layout"
+        tools:ignore="TextFields"
+        tools:text="4/4/4" />
+
+
+</android.support.constraint.ConstraintLayout>

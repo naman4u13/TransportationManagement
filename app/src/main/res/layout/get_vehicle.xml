@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/from_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1"
+        android:hint="From"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/arrow"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/from"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textVisiblePassword"
+            android:textSize="17sp"
+            tools:ignore="TextFields" />
+    </android.support.design.widget.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/right_arrow_black"
+        app:layout_constraintBottom_toBottomOf="@id/from_layout"
+        app:layout_constraintLeft_toRightOf="@id/from_layout"
+        app:layout_constraintRight_toLeftOf="@id/to_layout"
+        app:layout_constraintTop_toTopOf="@id/from_layout" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/to_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1"
+        android:hint="To"
+        app:layout_constraintLeft_toRightOf="@id/arrow"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/to"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textVisiblePassword"
+            android:textSize="17sp"
+            tools:ignore="TextFields" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:text="Departure Date"
+        android:textSize="15sp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintLeft_toLeftOf="@id/from_layout"
+        app:layout_constraintTop_toBottomOf="@id/to_layout"
+        android:id="@+id/departure_date_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/date"
+        android:textColor="@color/black"
+        android:text="Sun, 18 Nov"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@id/departure_date_label"
+        app:layout_constraintTop_toBottomOf="@id/departure_date_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Departure Time"
+        android:textSize="15sp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintLeft_toLeftOf="@id/to_layout"
+        app:layout_constraintTop_toBottomOf="@id/to_layout"
+        android:id="@+id/departure_time_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/time"
+        android:textColor="@color/black"
+        android:text="10:00 Am"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@id/departure_time_label"
+        app:layout_constraintTop_toBottomOf="@id/departure_time_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_marginTop="10dp"
+        app:layout_constraintRight_toRightOf="@id/to_layout"
+        app:layout_constraintLeft_toLeftOf="@id/from_layout"
+        app:layout_constraintTop_toBottomOf="@id/time"
+        android:layout_width="0dp"
+        android:background="@color/grey"
+        android:layout_height="2dp"/>
+
+    <Button
+        android:id="@+id/search_bus"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorAccent"
+        android:lineSpacingExtra="17sp"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintRight_toRightOf="@id/to_layout"
+        app:layout_constraintLeft_toLeftOf="@id/from_layout"
+        app:layout_constraintTop_toBottomOf="@id/view1"
+        android:text="Search Buses"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/recent_search"
+        android:background="#e1e1e1"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="@color/colorPrimary"
+        android:text="Recent Searches"
+        android:layout_marginTop="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/search_bus"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:id="@+id/trip1"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="@id/from_layout"
+        app:layout_constraintTop_toBottomOf="@id/recent_search"
+        android:text="Ajmeri Gate  ->  Raja Park"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+
+        app:layout_constraintRight_toRightOf="@id/to_layout"
+        app:layout_constraintTop_toTopOf="@id/trip1"
+        android:text="18 Nov, 10:00 AM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <View
+        android:id="@+id/view2"
+        android:layout_marginTop="4dp"
+        app:layout_constraintRight_toRightOf="@id/to_layout"
+        app:layout_constraintLeft_toLeftOf="@id/from_layout"
+        app:layout_constraintTop_toBottomOf="@id/trip1"
+        android:layout_width="0dp"
+        android:background="@color/grey"
+        android:layout_height="1dp"/>
+    <TextView
+        android:id="@+id/trip2"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="@id/from_layout"
+        app:layout_constraintTop_toBottomOf="@id/view2"
+        android:text="LNMIIT  ->  RBI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+
+        app:layout_constraintRight_toRightOf="@id/to_layout"
+        app:layout_constraintTop_toTopOf="@id/trip2"
+        android:text="28 Oct, 6:45 PM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <View
+        android:id="@+id/view3"
+        android:layout_marginTop="4dp"
+        app:layout_constraintRight_toRightOf="@id/to_layout"
+        app:layout_constraintLeft_toLeftOf="@id/from_layout"
+        app:layout_constraintTop_toBottomOf="@id/trip2"
+        android:layout_width="0dp"
+        android:background="@color/grey"
+        android:layout_height="1dp"/>
+
+</android.support.constraint.ConstraintLayout>

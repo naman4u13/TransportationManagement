@@ -1,0 +1,427 @@
+<resources>
+    <string name="app_name">Transport Manager</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--api keys-->
+    <string name="facebook_app_id">509045542494190</string>
+    <string name="LocationAPI">AIzaSyDXYUmzwVol3ESaliktVz-wP5j-sPgXYNQ</string>
+    <!--api keys end here-->
+    <string name="login">Login</string>
+    <string name="existing_user">Already a User</string>
+    <string name="btn_signup">Continue to Sign up</string>
+    <string name="confirm">Confirm</string>
+    <string name="otp">otp</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="new_user">New User</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="login_signup">Login / Signup with</string>
+    <string name="signup">Sign Up</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="email_mobile">E-mail and Mobile</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_mobile">Mobile</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="hint_name">First name</string>
+    <string name="LastName">last name</string>
+    <string name="btn_login">Continue to Login</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_link_to_register">Not a member? Sign up now.</string>
+    <string name="btn_link_to_login">Already registered! Login me.</string>
+    <string name="btn_logout">logout</string>
+    <string name="Rs">\u20B9</string>
+    <string name="contactUs">feedback/suggestion/complain</string>
+    <string name="contactUs1">We are here to help you.\n\nPlease write to us for any feedback or, suggestions.</string>
+    <string name="room_house">House/Room no.</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+    <string name="signout">Signout</string>
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_home">Haat</string>
+    <string name="nav_profile">Profile</string>
+    <string name="nav_my_ads">My Ads</string>
+    <string name="nav_fav_ads">Favorite Ads</string>
+    <string name="nav_fav_college">My Campus</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_about_us">About Us</string>
+    <string name="nav_ch_ads">Ads By CampusHaat</string>
+    <string name="create_ad">Create ad</string>
+    <string name="share_us">Share Us</string>
+    <string name="nav_help">Help</string>
+    <string name="ad_filter">apply filter</string>
+    <string name="title_activity_edit_campus">Edit campus</string>
+    <string name="action_logout">logout</string>
+    <string name="add_to_permanent_address">add to profile</string>
+    <string name="UserNotLoggedIn">user not logged in</string>
+    <string name="ChangeAddress">change address</string>
+    <string name="DeleteAd">Are you sure you want to permanently delete this ad?</string>
+    <string name="description">Description</string>
+    <string name="ownerEmail">admin@campushaat.com</string>
+    <string name="please_contact_campus_ambassadors_to_buy_this_item">Please contact campus ambassadors to buy this item</string>
+    <string name="terms_conditions">Please accept Terms And Conditions?</string>
+
+    <string name="free">Free</string>
+    <string name="donate">Donate</string>
+    <string name="sell">Sell</string>
+    <string name="buy">Buy</string>
+    <string name="rent">Rent</string>
+
+
+    <!-- toast messages -->
+    <string name="image_limit">maximum 3 images allowed</string>
+    <string name="enter_product_name">Please enter product name</string>
+    <string name="mobile_email_visibility">Atleast one of mobile or, email is required.</string>
+    <string name="invalid_mobile">Please enter valid mobile number.</string>
+    <string name="donate_sell_rent">Please select atleast one from Donate, sell or, rent</string>
+    <string name="empty_rent_price">Rent price is required</string>
+    <string name="empty_sell_price">Sell price is required</string>
+    <string name="accept_terms_condition">Please accept Terms and Conditions</string>
+    <string name="login_error">Error in login! Please try again.</string>
+    <string name="mobie_not_provided">owner did not provide mobile number. Please contact using email.</string>
+    <string name="email_not_provided">owner did not provide email. Please contact using mobile.</string>
+    <string name="no_ads_fav_list">no ads found in favorite list! Please click heart icon on ad details screen to make it your favorite. </string>
+    <string name="no_ads_filter">no ads found with selected filter choices! Please re-select your choices.</string>
+
+    <!-- address screen toast messages-->
+    <string name="empty_house">Please enter room number. </string>
+    <string name="empty_locality">Please enter locality. </string>
+    <string name="empty_city">Please enter your city. </string>
+    <string name="empty_pincode">Please enter pincode. </string>
+    <string name="empty_state">Please enter your state. </string>
+    <string name="address_retrieved">Address retrieved successfully! </string>
+    <string name="address_retrieve_failed">Oops! could not retrieve address :( Please select address again.</string>
+
+    <!-- home screen bottom navigation bar string resource -->
+    <string name="bottom_nav_home">Home</string>
+    <string name="bottom_nav_profile">Profile</string>
+    <string name="bottom_nav_create">Create</string>
+    <string name="bottom_nav_notifications">Notify</string>
+    <string name="bottom_nav_favs">Favs</string>
+
+    <string name="try_again">Something went wrong :( Please try again. </string>
+
+    <string name="create_affective_ad">How to create an affective Ad?</string>
+    <string name="How_sell_on_CH">How to Sell to CampusHaat?</string>
+    <string name="How_Buy_Rent">How to Buy | Rent?</string>
+    <string name="help_text"> \t<b>i.</b> Put images in your ads, as it will have higher chances of getting noticed\n
+                              \t<b>ii.</b> Provide as much information as possible about the item in title/description\n
+                              \t<b>iii.</b> Example: for books, courses/dept, author name etc.\n</string>
+    <string name="help_text2">\t<b>i.</b> Handover your item to your campus ambassadors and let us do rest of the work.\n
+                              \t<b>ii.</b> We will take the responsibility to sell your stuff.\n
+                              \t<b>iii.</b> The amount will be deposited to you via your preferred option, Paytm or, Bank deposit.\n
+    </string>
+
+    <string name="help_text_Buy">\t<b>i.</b> Click on heart icon to include ad in your favorite list. You can view these ads anytime from
+                                        Favorite Ads section on sidebar.\n
+                                   \t<b>ii.</b> Click again on the heart icon to remove it from the list\n
+                                   \t<b>iii.</b> After you have decided to buy some item, call or, email the owner directly to make your deal.\n
+                                   \t<b>iv.</b> Decide a place to meet and that\'s it. Easy! right :)\n
+    </string>
+
+    <string name="aboutUsTextHeader"> CampusHaat is an online platform to buy, sell, rent, donate used/new items.
+        People in a community (college/school) can use our platform to reach out to people around you. \n\n
+        Use CampusHaat to sell, rent or, donate items like cycles, coolers, books, laptops and accessories (almost anything)
+        and make easy money. \n\n
+        Website : <a href="http://campushaat.com">campushaat.com</a> \n\n
+        Playstore : <a href="https://play.google.com/store/apps/details?id=com.campushaat.app">campushaat.app</a> \n\n
+        Facebook page : <a href="https://www.facebook.com/campushaat">www.facebook.com/campushaat</a> \n\n
+    </string>
+    <string name="aboutUsPoints">
+        \t•	Absolutely free to post your ad\n
+        \t•	Post unlimited ads\n
+        \t•	Search from various categories(Books, Electronics, Vehicles and others)\n
+        \t•	Save ads in favorite list to see later\n
+        \t•	Share ad on social media platform (fb/whatsapp etc.) to reach more people\n
+    </string>
+    <string name="aboutUsFull">Share study materials and other useful things to juniors or anyone who require.
+        Sharing things would be of great help to the people who would be staying in the campus.
+        People sitting in the upcoming placement season and who will be preparing for various competitive exams.\n
+        Graduating from the campus?\n
+        You can sell or, donate your items like books, cycles, coolers, blowers, speakers and other things. You can also rent your cycles during events in the campus like Antaragni, Techkriti, Udghosh etc on your terms and conditions.
+    </string>
+
+    <string name="TermsAndCondtions">
+        "i.\tDo not post anything illegal/inappropriate, only user is solely responsible for all the posted content\n\n"
+        "ii.\tWe do not take any responsibility of the quality of the product\n\n"
+        "iii.\tChange your adStatus to “Sold”, after the deal is done. So that you don't get unnecessary contacts\n\n"
+        "iv.\tProvide correct contact information\n\n"
+        "v.\tBe nice to the buyers\n\n"
+        "vi.\tDo not spam, it won’t be tolerated and you might get your account blocked."</string>
+    <string name="heading">Heading</string>
+    <string name="message">Message</string>
+    <string name="ok">OK</string>
+    <string name="call">call</string>
+    <string name="mail">email</string>
+    <string name="address">address</string>
+    <string name="report">Report</string>
+    <string name="price">Price</string>
+    <string name="adimage">AdImage</string>
+    <string name="moreicon">moreIcon</string>
+    <string name="test_campuhaat_com">test@campuhaat.com</string>
+    <string name="_89679967995">89679967995</string>
+    <string name="name">Name</string>
+    <string name="enter_address">Address</string>
+    <string name="phone">Phone</string>
+    <string name="last_name">Last Name</string>
+    <string name="first_name">First Name</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>Home</item>
+        <item>Profile</item>
+        <item>My Ads</item>
+        <item>Favorite Ads</item>
+        <item>CampusHaat Ads</item>
+        <item>My Campus</item>
+        <item>Create Ad</item>
+        <item>About Us</item>
+        <item>Help</item>
+    </string-array>
+
+
+    <string-array name="categories_nav_toolbar_titles">
+        <item>Books</item>
+        <item>Vehicles</item>
+        <item>Electronics</item>
+        <item>Sports</item>
+        <item>Laptops</item>
+        <item>Storage</item>
+        <item>Cycles</item>
+        <item>Others</item>
+        <item>Mobiles</item>
+        <item>Clothes</item>
+    </string-array>
+
+    <string-array name="forAdminAmbassador">
+        <item>ads to verify</item>
+        <item>ads by CH verified</item>
+        <item>Sold by CH</item>
+        <item>Payment received by CH</item>
+    </string-array>
+
+    <string-array name="condition">
+        <item>used</item>
+        <item>used and good</item>
+        <item>new</item>
+    </string-array>
+
+    <string-array name="retrieveChoice">
+        <item>User</item>
+        <item>Campus</item>
+    </string-array>
+
+    <string-array name="rent_type">
+        <item>Day</item>
+        <item>Week</item>
+        <item>Month</item>
+        <item>Semester</item>
+        <item>Year</item>
+    </string-array>
+
+    <string-array name="bottom_nav_items">
+        <item>@string/bottom_nav_home</item>
+        <item>@string/bottom_nav_profile</item>
+        <item>@string/bottom_nav_create</item>
+        <item>@string/bottom_nav_notifications</item>
+        <item>@string/bottom_nav_favs</item>
+    </string-array>
+    <string name="title_activity_login2">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="ch_store">CH Store</string>
+    <string name="room_flat">Room/Flat</string>
+    <string name="enter_here">Enter Here</string>
+    <string name="campus_ambassadors">Campus Ambassadors</string>
+    <string name="not_available">Not Available</string>
+    <string name="_address">Address:</string>
+    <string name="active_users">active users</string>
+    <string name="total_ads">total ads</string>
+    <string name="campusimage">campusImage</string>
+    <string name="_2_views">2 Views</string>
+    <string name="_0_views">0 views</string>
+    <string name="created_date">Created date</string>
+    <string name="_0_days_ago">0 Days ago</string>
+    <string name="extra_message">message</string>
+    <string name="extra_ad">ad</string>
+    <string name="latest">Latest</string>
+    <string name="trending">Trending</string>
+    <string name="rent_low_to_high">Rent: Low To High</string>
+    <string name="rent_high_to_low">Rent: High To Low</string>
+    <string name="buy_low_to_high">Buy: Low To High</string>
+    <string name="buy_high_to_low">Buy: High To Low</string>
+    <string name="_0_to_100">0\nto\n100</string>
+    <string name="_100">100</string>
+    <string name="condition">Condition</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="ad_name">Ad name</string>
+    <string name="_2_days_ago">2 Days ago</string>
+    <string name="user_name">User Name</string>
+    <string name="notifications">Notifications</string>
+    <string name="campus_name">College/University Name</string>
+    <string name="campus_haat">Campus Haat</string>
+    <string name="reset">Reset</string>
+    <string name="apply">Apply</string>
+    <string name="new_string">new</string>
+    <string name="used_and_good">Used and Good</string>
+    <string name="used">Used</string>
+    <string name="all">All</string>
+    <string name="category">Category</string>
+    <string name="not_able_to_find_create_campus">Not able to find campus..! Create Campus</string>
+    <string name="order_details">PRICE DETAILS</string>
+    <string name="total">Total</string>
+    <string name="bag_total">Bag Total</string>
+    <string name="delivery_charges">Delivery Charges</string>
+    <string name="total_payable">Total Payable</string>
+    <string name="place_order">Place Order</string>
+    <string name="get_on_rent">Get On Rent</string>
+    <string name="in_cart">This Item is already in your cart..!</string>
+    <string name="go_to_cart">Go To Cart</string>
+    <string name="my_orders">My Orders</string>
+    <string name="confirm_order">Confirm Order</string>
+    <string name="orders">Orders</string>
+    <string name="order_id">Order Id</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="add_these_details_nto_my_profile">Add These Details\nTo My Profile</string>
+    <string name="seller_s_name">Seller\'s Name</string>
+    <string name="buyer_s_name">Buyer\'s Name</string>
+    <string name="seller_category_id">602</string>
+    <string name="buyer_category_id">601</string>
+    <string name="order_status_category_id">671</string>
+    <string name="date_time_category_id">704</string>
+    <string name="address_category_id">703</string>
+    <string name="phone_category_id">701</string>
+    <string name="email_category_id">702</string>
+    <string name="pick_up">Pick Up</string>
+    <string name="delivery">Delivery</string>
+    <string name="refresh">refresh</string>
+    <string name="ranger_category_id">603</string>
+    <string name="cart">Cart</string>
+    <string name="track">Tracking, tap to cancel</string>
+    <string name="firebase_path">https://test-8bfeb.firebaseio.com/</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="viewonmap">ViewOnMap</string>
+    <string name="profileimage">profileImage</string>
+    <string name="ranger_s_name">Ranger\'s Name</string>
+    <string name="rangerimage">rangerImage</string>
+    <string name="go_to_orders">Go To Orders..</string>
+    <string name="product">Product</string>
+    <string name="add_product_images">Product Images</string>
+    <string name="rent_price_u20b9">Rent Price ₹</string>
+    <string name="sell_price_u20b9">Sell Price ₹</string>
+    <string name="description_optional">Description (Optional)</string>
+    <string name="product_name">Product Name</string>
+    <string name="tap_to_add_images">Tap To Add Images</string>
+    <string name="pick_image_intent_text">Pick Image from following</string>
+    <string name="mobile">Mobile</string>
+    <string name="email">Email</string>
+    <string name="edit">Edit</string>
+    <string name="search_products">Search Products</string>
+
+    <!--Added for CreateProfileActivity-->
+    <string name="tap_above_to_add_shop_image">Tap to add\nshop Image</string>
+    <string name="role">Role</string>
+    <string name="establishment_type">Establishment Type</string>
+    <string name="timing">Timing</string>
+    <string name="add_another_number">Add another number</string>
+    <string name="market_landmark_name">Market/Landmark Name</string>
+    <string name="contact">Email</string>
+    <string name="profile_name">Profile Name</string>
+    <string name="shopprofile">shopProfile</string>
+    <string name="tap_to_add_banners_for_promotion">Tap to add\nbanners for promotion</string>
+    <string name="title_activity_test_tab">TestTab</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="product_categories">Product Categories</string>
+    <string name="shops">Shops</string>
+    <string name="rupeeSymbol">\u20B9 </string>
+    <string name="notPaid">Not Paid</string>
+    <string name="orderQuantity">Quantity : 1</string>
+    <string name="paymentMode">Pay On Delivery</string>
+    <string name="reviews">Reviews</string>
+    <string name="button">Button</string>
+    <string name="done">Done</string>
+    <string name="keyTabName">tabName</string>
+    <string name="keyOrders">order</string>
+    <string name="payBy">Pay by </string>
+    <string name="action_send">Send</string>
+    <string name="type_message">type message..</string>
+    <string name="or">OR</string>
+    <string name="title_activity_order_details">OrderDetailsActivity</string>
+    <string name="find_product">Find Products</string>
+    <string name="stringOrderId">Order Id  :</string>
+    <string name="orderId">Order Id :</string>
+    <string name="discount">408</string>
+    <string name="deliveryCharge">405</string>
+    <string name="totalOrder">407</string>
+    <string name="sort_by">SORT BY</string>
+    <string name="filter">FILTER</string>
+    <string name="per">Per</string>
+    <string name="productQuantity">Quantity :</string>
+    <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+
+    <string name="paytm">Paytm</string>
+    <string name="cash_on_delivery">Cash On Delivery</string>
+    <string name="type_your_comment">type your comment!</string>
+    <string name="campus_members">Campus Members</string>
+    <string name="my_cart">My Cart</string>
+    <string name="seller">Seller</string>
+    <string name="other_sellers">Other Sellers</string>
+    <string name="no_chats_to_display">No Chats to Display</string>
+    <string name="like">Like</string>
+    <string name="call_ranger">Call Ranger</string>
+    <string name="rent_type">Rent Type</string>
+    <string name="quantity">Quantity</string>
+    <string name="unit">Unit</string>
+    <string name="action_start">START</string>
+    <string name="action_finish">FINISH</string>
+    <string name="get_it_for_free">Get it for Free</string>
+    <string name="search_members">Search Members</string>
+    <string name="add_cover_images">Add cover Images</string>
+    <string name="add_logo_image">Add Logo Image</string>
+    <string name="seller_name">Seller name</string>
+    <string name="pick_image">Pick Image</string>
+    <string name="ride">RIDE</string>
+    <string name="review_image">review image</string>
+    <string name="direction">direction</string>
+    <string name="log_in_with">Log In with</string>
+    <string name="verify">Verify</string>
+    <string name="event_name">Event Name</string>
+    <string name="event_time">Event Time</string>
+    <string name="date">Date</string>
+    <string name="start_time">Start Time</string>
+    <string name="end_time">End Time</string>
+    <string name="start_date">Start Date</string>
+    <string name="event_info">Event Info</string>
+    <string name="venue_location">Venue Location</string>
+    <string name="formal_event">Formal Event</string>
+    <string name="informal_event">Informal Event</string>
+    <string name="event_type">Event Type</string>
+    <string name="expected_audience">Expected audience</string>
+    <string name="my_events">My Events</string>
+    <string name="liked_events">Liked Events</string>
+    <string name="title_activity_temp">temp</string>
+    <string name="send_invitation_via_e_mail">Send invitation via E-Mail</string>
+    <string name="no_events_available">No events available !</string>
+</resources>

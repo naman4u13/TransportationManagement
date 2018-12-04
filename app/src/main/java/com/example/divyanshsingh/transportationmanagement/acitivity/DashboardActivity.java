@@ -32,7 +32,6 @@ public class DashboardActivity extends AppCompatActivity {
         resultFragment = new SearchResultFragment();
         adapter.AddFragment(resultFragment, "Result");
         adapter.AddFragment(new CurrentFragment(), "Current");
-
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
     }

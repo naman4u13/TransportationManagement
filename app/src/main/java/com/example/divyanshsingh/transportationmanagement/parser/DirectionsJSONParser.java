@@ -35,7 +35,7 @@ public class DirectionsJSONParser {
     public List<List<HashMap<String,String>>> parse(JSONObject jObject){
 
         int duration=0;double distance=0;
-        List<List<HashMap<String, String>>> routes = new ArrayList<List<HashMap<String,String>>>();
+        List<List<HashMap<String, String>>> routes = new ArrayList<List<HashMap<String,String>>>();//List of route , where each route has a list of coordinate points represented as Hash Map
         JSONArray jRoutes = null;
         JSONArray jLegs = null;
         JSONArray jSteps = null;
@@ -44,22 +44,24 @@ public class DirectionsJSONParser {
 
             jRoutes = jObject.getJSONArray("routes");
 
-            /** Traversing all routes */
+            /** Traversing all routes, actually as we have set 'alternative = false' in API request only single route will be returned in API response*/
             for(int i=0;i<jRoutes.length();i++){
-                Log.e("calc", String.valueOf(jRoutes.length()));
                 jLegs = ( (JSONObject)jRoutes.get(i)).getJSONArray("legs");
                 List path = new ArrayList<HashMap<String, String>>();
 
                 /** Traversing all legs */
                 for(int j=0;j<jLegs.length();j++){
-                    distance = distance+Double.parseDouble((((JSONObject)((JSONObject)jLegs.get(j)).get("distance")).get("value")).toString());
+                    //legs in a route depends upon no. of waypoints,to be exact legs = waypoints + 1;
+                    //each leg object has parameters distance and duration
+                    //extract them and add it all for legs to get result for route
+                    distance = distance + Double.parseDouble((((JSONObject)((JSONObject)jLegs.get(j)).get("distance")).get("value")).toString());
                     duration = duration + Integer.parseInt((((JSONObject)((JSONObject)jLegs.get(j)).get("duration")).get("value")).toString());
                     jSteps = ( (JSONObject)jLegs.get(j)).getJSONArray("steps");
 
                     /** Traversing all steps */
                     for(int k=0;k<jSteps.length();k++){
-                        String polyline = "";
-                        polyline = (String)((JSONObject)((JSONObject)jSteps.get(k)).get("polyline")).get("points");
+                        String polyline = "";//A polyline is a list of points, where line segments are drawn between consecutive points
+                        polyline = (String)((JSONObject)((JSONObject)jSteps.get(k)).get("polyline")).get("points");//each step has a corresponding polyline, 'get("ponts")' give encoded polyline string
                         List list = decodePoly(polyline);
 
                         /** Traversing all points */

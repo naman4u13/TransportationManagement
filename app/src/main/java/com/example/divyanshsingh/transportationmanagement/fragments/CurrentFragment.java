@@ -35,6 +35,7 @@ public class CurrentFragment extends Fragment implements OnMapReadyCallback, Goo
     private static final int MY_LOCATION_REQUEST_CODE = 99;
     ArrayList<LatLng> locs = new ArrayList<LatLng>();
     GoogleMap mMap;
+
     public CurrentFragment() {
         // Required empty public constructor
     }
@@ -59,7 +60,7 @@ public class CurrentFragment extends Fragment implements OnMapReadyCallback, Goo
         locs.add(new LatLng(26.457273, 80.349943));
         locs.add(new LatLng(26.477538, 80.343243));
         locs.add(new LatLng(26.480797, 80.301492));
-        mapFragment.getMapAsync(this);
+        mapFragment.getMapAsync(this);// a callback object which will be triggered when the GoogleMap instance is ready to be used.
         return view;
 
     }
@@ -67,22 +68,24 @@ public class CurrentFragment extends Fragment implements OnMapReadyCallback, Goo
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-        LatLngBounds.Builder builder = new LatLngBounds.Builder();
+        LatLngBounds.Builder builder = new LatLngBounds.Builder();//builder that is able to create a minimum bound or rectangle based on a set of LatLng points.
         for (int i = 0; i < locs.size(); i++) {
-            mMap.addMarker(new MarkerOptions().position(locs.get(i)).title("Marker" + i));
-            builder.include(locs.get(i));
+            mMap.addMarker(new MarkerOptions().position(locs.get(i)).title("Marker" + i));//adding markers on all waypoints
+            builder.include(locs.get(i));//Including each waypoint for building of the bounds.
         }
-        LatLngBounds bounds = builder.build();
+        LatLngBounds bounds = builder.build();//Creates the LatLng bounds.
         int padding = 50; // offset from edges of the map in pixels
+        //Returns a CameraUpdate that transforms the camera such that the specified latitude/longitude bounds are centered on screen at the greatest possible zoom level.
         final CameraUpdate cu = CameraUpdateFactory.newLatLngBounds(bounds, padding);
         mMap.setOnMapLoadedCallback(new GoogleMap.OnMapLoadedCallback() {
             @Override
             public void onMapLoaded() {
                 mMap.animateCamera(cu);
             }
-        });
-        checkPermission();
+        });// modify a map's camera
+        checkPermission();//check for location permission at runtime
     }
+
     void checkPermission() {
         // Here, thisActivity is the current activity
         if (ContextCompat.checkSelfPermission(getActivity(),
@@ -95,36 +98,36 @@ public class CurrentFragment extends Fragment implements OnMapReadyCallback, Goo
                     MY_LOCATION_REQUEST_CODE);
 
         } else {
-            Log.e("TAG", "checkPermission: ");
-            updatemap();
+
+            updatemap();//sets 'my location' button
         }
     }
-    @SuppressLint("MissingPermission")
-    void updatemap() {
-        mMap.setMyLocationEnabled(true);
-        mMap.setOnMyLocationButtonClickListener(this);
-        // Add a marker in Sydney, Australia, and move the camera.
 
-
-    }
     @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
         if (requestCode == MY_LOCATION_REQUEST_CODE) {
             if (permissions.length > 0 &&
                     grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-
-                Log.e("if", permissions[0]);
-                updatemap();
+                updatemap();//sets 'my location' button
             } else {
-                Log.e("else", "else");
+                // Permission was denied. Display an error message.
             }
         }
 
     }
 
+    @SuppressLint("MissingPermission")
+    void updatemap() {
+        mMap.setMyLocationEnabled(true);//enable the My Location layer on the map and add 'my location' button on top right corner
+        mMap.setOnMyLocationButtonClickListener(this);//enable a listener on 'my location' button
+
+
+    }
+
+
     @Override
     public boolean onMyLocationButtonClick() {
-        isGPSEnable();
+        isGPSEnable();//display a dialog box to configure gps setting
         return false;
     }
 
